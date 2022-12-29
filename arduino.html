@@ -1,0 +1,1005 @@
+<!doctype html>
+
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Allright Group</title>
+    <meta name="description" content="A free html template with Sketch design made with Bootstrap">
+    <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
+    <meta name="author" content="Codrops" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#66e0e5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/flickity.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {"availableFonts":["TeX"],"scale": 150}});</script>
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+</style>
+</head>
+
+<body>
+    <script>
+         hljs.initHighlightingOnLoad();
+         hljs.initLineNumbersOnLoad({
+         // 让单行的时候也显示行号
+         singleLine: true
+         });
+    </script>
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header-nav-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="img/synthetica-logo.png" height=50px alt="Synthetica Freebie"></a>
+                </div>
+                <div class="primary-nav-wrapper">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="index.html#team">Team Introduction</a></li>
+                            <li><a href="index.html#articles">Course Progress</a></li>
+                            <li><a href="index.html#articles">Final project</a></li>
+
+                        </ul>
+                    </nav>
+                    <!-- <div class="secondary-nav-wrapper" height=50px>
+                        <ul class="secondary-nav">
+                            <li class="subscribe"><a href="#get-started">Contact</a></li>
+                            <li class="search"><a href="#search" class="show-search"><i class="fa fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-wrapper">
+                        <ul class="search">
+                            <li>
+                                <input type="text" id="search-input"
+                                    placeholder="Start typing then hit enter to search">
+                            </li>
+                            <li>
+                                <a href="#" class="hide-search"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 表头结束 -->
+    <div class="layout parent">
+        <div class="left">
+            <p></p>
+        </div>
+        <div class="center">
+            <div class="content">
+                <h1>
+                    Arduino实验
+                </h1>
+                <h2>点灯实验</h2>
+                <img class="picture" src="./img/ad1.png" alt="" width="40%">
+                <h3>代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+const int buttonPin = 2;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+
+  }
+}
+                    <code><pre>
+                </div>
+                <!-- 结束 -->
+                <h2>电位器实验</h2>
+                <img class="picture" src="./img/ad2.png" alt="" width="40%">
+                <h3>代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+int sensorPin = A0; // select the input pin for the potentiometer
+int ledPin = 13; // select the pin for the LED
+int sensorValue = 0; // variable to store the value coming from the sensor
+void setup() {
+ // declare the ledPin as an OUTPUT:
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ // read the value from the sensor:
+ sensorValue = analogRead(sensorPin);
+ // turn the ledPin on
+ digitalWrite(ledPin, HIGH);
+ // stop the program for <sensorValue> milliseconds:
+ delay(sensorValue);
+ // turn the ledPin off:
+ digitalWrite(ledPin, LOW);
+ // stop the program for for <sensorValue> milliseconds:
+ delay(sensorValue);
+}
+//
+int sensorPin = A0; // select the input pin for the potentiometer
+int ledPin = 13; // select the pin for the LED
+int sensorValue = 0; // variable to store the value coming from the sensor
+void setup() {
+ // declare the ledPin as an OUTPUT:
+ pinMode(ledPin, OUTPUT);
+ Serial.begin(9600);
+}
+void loop() {
+ // read the value from the sensor:
+ sensorValue = analogRead(sensorPin);
+ // turn the ledPin on
+ digitalWrite(ledPin, HIGH);
+ // stop the program for <sensorValue> milliseconds:
+ delay(sensorValue);
+ // turn the ledPin off:
+ digitalWrite(ledPin, LOW);
+ // stop the program for for <sensorValue> milliseconds:
+ delay(sensorValue);
+ Serial.println(sensorValue);
+ delay(1);
+}
+
+                    <code><pre>
+                </div>
+                <!-- 结束 -->
+                <h2>超声波测距，LCD1602显示</h2>
+                <img class="picture" src="./img/ad3.png" alt="" width="40%">
+                <h3>代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+#include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装
+
+LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例
+
+
+
+
+//us
+// circuit
+
+/*
+Arduino        SR04
+5V        ---    VCC
+A0        ---    Trig
+A1        ---    Echo
+GND        ---    GND
+*/
+
+// pin setting
+
+#define TrigPin A0    
+// __|^|_____________
+// 10us or more HITH SIGNAL will drive it work for one time
+
+#define EchoPin A1    
+// ______|^^^^^^^^|__ 
+// PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)
+// pulse width WILL NOT long than 38ms, it means timeout
+// Distance = Speed x Time
+// Speed of sound ~= 340m/s = 0.340mm/us
+
+int count = 0;
+
+long duration;
+// PULSE WIDTH
+
+
+//湿度
+#include "DHT.h"
+
+#define DHTPIN A2     // Digital pin connected to the DHT sensor
+// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
+// Pin 15 can work but DHT must be disconnected during program upload.
+
+// Uncomment whatever type you're using!
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+
+// Connect pin 1 (on the left) of the sensor to +5V
+// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+// to 3.3V instead of 5V!
+// Connect pin 2 of the sensor to whatever your DHTPIN is
+// Connect pin 4 (on the right) of the sensor to GROUND
+// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
+// Initialize DHT sensor.
+// Note that older versions of this library took an optional third parameter to
+// tweak the timings for faster processors.  This parameter is no longer needed
+// as the current DHT reading algorithm adjusts itself to work on faster procs.
+DHT dht(DHTPIN,DHTTYPE);
+
+
+
+
+
+void setup() {
+    // set Serial communication
+    Serial.begin(115200);
+    // set pin mode
+    pinMode(TrigPin, OUTPUT);
+    pinMode(EchoPin, INPUT);
+    // init pin
+    digitalWrite(TrigPin, LOW);
+    delay(1);
+  Serial.println(F("DHTxx test!"));
+
+  dht.begin();
+
+
+
+
+
+  
+  lcd.begin(16, 2); //LCD初始化
+
+
+  //lcd.print("hello, world!"); //LCD输出字符 hello,world!
+}
+
+void loop() {
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  //lcd.print(millis()/1000);//显示上电到目前为止的秒数
+  Serial.println(count++);
+  Serial.println(getDistance());
+  Serial.println("");
+  Serial.println("");
+  char tt="";
+
+
+  
+  delay(1000);
+
+  delay(2000);
+
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.println(F("°F"));
+
+  
+  lcd.clear();
+  lcd.print(t);
+  lcd.print("C ");
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  lcd.print(h);
+  lcd.print("% ");
+}
+
+
+long getDistance() {
+    // trig
+    digitalWrite(TrigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TrigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TrigPin, LOW);
+    // echo
+    duration = pulseIn(EchoPin, HIGH);     // unit: us
+    return duration * 0.34029 / 2;         // unit: mm
+}
+
+                    <code><pre>
+                </div>
+                <!-- 结束 -->
+                <h2>温湿度传感实验</h2>
+                <h3>代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+#include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装
+
+LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例
+
+
+
+
+//us
+// circuit
+
+/*
+Arduino        SR04
+5V        ---    VCC
+A0        ---    Trig
+A1        ---    Echo
+GND        ---    GND
+*/
+
+// pin setting
+
+#define TrigPin A0    
+// __|^|_____________
+// 10us or more HITH SIGNAL will drive it work for one time
+
+#define EchoPin A1    
+// ______|^^^^^^^^|__ 
+// PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)
+// pulse width WILL NOT long than 38ms, it means timeout
+// Distance = Speed x Time
+// Speed of sound ~= 340m/s = 0.340mm/us
+
+int count = 0;
+
+long duration;
+// PULSE WIDTH
+
+
+//湿度
+#include "DHT.h"
+
+#define DHTPIN A2     // Digital pin connected to the DHT sensor
+// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
+// Pin 15 can work but DHT must be disconnected during program upload.
+
+// Uncomment whatever type you're using!
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+
+// Connect pin 1 (on the left) of the sensor to +5V
+// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+// to 3.3V instead of 5V!
+// Connect pin 2 of the sensor to whatever your DHTPIN is
+// Connect pin 4 (on the right) of the sensor to GROUND
+// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
+// Initialize DHT sensor.
+// Note that older versions of this library took an optional third parameter to
+// tweak the timings for faster processors.  This parameter is no longer needed
+// as the current DHT reading algorithm adjusts itself to work on faster procs.
+DHT dht(DHTPIN,DHTTYPE);
+
+
+
+
+
+void setup() {
+    // set Serial communication
+    Serial.begin(115200);
+    // set pin mode
+    pinMode(TrigPin, OUTPUT);
+    pinMode(EchoPin, INPUT);
+    // init pin
+    digitalWrite(TrigPin, LOW);
+    delay(1);
+  Serial.println(F("DHTxx test!"));
+
+  dht.begin();
+
+
+
+
+
+  
+  lcd.begin(16, 2); //LCD初始化
+
+
+  //lcd.print("hello, world!"); //LCD输出字符 hello,world!
+}
+
+void loop() {
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  //lcd.print(millis()/1000);//显示上电到目前为止的秒数
+  Serial.println(count++);
+  Serial.println(getDistance());
+  Serial.println("");
+  Serial.println("");
+  char tt="";
+
+
+  
+  delay(1000);
+
+  delay(2000);
+
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.println(F("°F"));
+
+  
+  lcd.clear();
+  lcd.print(t);
+  lcd.print("C ");
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  lcd.print(h);
+  lcd.print("% ");
+}
+
+
+long getDistance() {
+    // trig
+    digitalWrite(TrigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TrigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TrigPin, LOW);
+    // echo
+    duration = pulseIn(EchoPin, HIGH);     // unit: us
+    return duration * 0.34029 / 2;         // unit: mm
+}
+
+
+                    <code><pre>
+                </div>
+                <!-- 结束 -->
+                <h2>与processing联动的红绿灯实验</h2>
+                <img class="picture" src="./img/ad4.png" alt="" width="40%">
+                <h3>代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+import processing.serial.*;
+Serial port;
+
+void setup(){
+  port=new Serial(this,"COM5",9600); //Arduino's com
+  size(600,200);
+}
+
+void draw(){
+  fill(255,0,0);
+  rect(450,50,100,100);  
+
+  fill(0,255,0);
+  rect(50,50,100,100);
+
+  fill(255,255,0);
+  rect(250,50,100,100);
+}
+
+void mouseClicked(){
+  if((mouseX>=50)&(mouseX<=150)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("green");
+    port.write("b");
+  }
+  else if((mouseX>=250)&(mouseX<=350)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("yellow");
+    port.write("c");
+  }
+  else if((mouseX>=450)&(mouseX<=550)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("red");
+    port.write("a");
+  }
+}
+
+                    <code><pre>
+                    </div>
+
+                      <h1 id="arduino%E4%BD%9C%E4%B8%9A">Arduino作业</h1>
+                      <p><img src="file:///d:/wechatfile/WeChat Files/wxid_kdaq9q1l904b21/FileStorage/File/2022-12/MOBAN-171015042620/MOBAN-171015042620/image/image_q2pNazvkBu.png" alt=""></p>
+                      <pre class="hljs"><code><div><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> buttonPin = <span class="hljs-number">2</span>;     <span class="hljs-comment">// the number of the pushbutton pin</span>
+                      <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ledPin =  <span class="hljs-number">13</span>;      <span class="hljs-comment">// the number of the LED pin</span>
+                      
+                      <span class="hljs-comment">// variables will change:</span>
+                      <span class="hljs-keyword">int</span> buttonState = <span class="hljs-number">0</span>;         <span class="hljs-comment">// variable for reading the pushbutton status</span>
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// initialize the LED pin as an output:</span>
+                        pinMode(ledPin, OUTPUT);
+                        <span class="hljs-comment">// initialize the pushbutton pin as an input:</span>
+                        pinMode(buttonPin, INPUT);
+                      }
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// read the state of the pushbutton value:</span>
+                        buttonState = digitalRead(buttonPin);
+                      
+                        <span class="hljs-comment">// check if the pushbutton is pressed. If it is, the buttonState is HIGH:</span>
+                        <span class="hljs-keyword">if</span> (buttonState == HIGH) {
+                          <span class="hljs-comment">// turn LED on:</span>
+                          digitalWrite(ledPin, HIGH);
+                        } <span class="hljs-keyword">else</span> {
+                          <span class="hljs-comment">// turn LED off:</span>
+                          digitalWrite(ledPin, LOW);
+                      
+                        }
+                      }
+                      </div></code></pre>
+                      <h2 id="%E7%94%B5%E4%BD%8D%E5%99%A8%E5%AE%9E%E9%AA%8C">电位器实验</h2>
+                      <p><a href="https://docs.arduino.cc/built-in-examples/basics/AnalogReadSerial" title="Analog Read Serial | Arduino Documentation | Arduino Documentation">Analog Read Serial | Arduino Documentation | Arduino Documentation</a></p>
+                      <p><img src="file:///d:/wechatfile/WeChat Files/wxid_kdaq9q1l904b21/FileStorage/File/2022-12/MOBAN-171015042620/MOBAN-171015042620/image/image_BW6fx0kP1V.png" alt=""></p>
+                      <pre class="hljs"><code><div><span class="hljs-keyword">int</span> sensorPin = A0;    <span class="hljs-comment">// select the input pin for the potentiometer</span>
+                      <span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">13</span>;      <span class="hljs-comment">// select the pin for the LED</span>
+                      <span class="hljs-keyword">int</span> sensorValue = <span class="hljs-number">0</span>;  <span class="hljs-comment">// variable to store the value coming from the sensor</span>
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// declare the ledPin as an OUTPUT:</span>
+                        pinMode(ledPin, OUTPUT);
+                      }
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// read the value from the sensor:</span>
+                        sensorValue = analogRead(sensorPin);
+                        <span class="hljs-comment">// turn the ledPin on</span>
+                        digitalWrite(ledPin, HIGH);
+                        <span class="hljs-comment">// stop the program for &lt;sensorValue&gt; milliseconds:</span>
+                        delay(sensorValue);
+                        <span class="hljs-comment">// turn the ledPin off:</span>
+                        digitalWrite(ledPin, LOW);
+                        <span class="hljs-comment">// stop the program for for &lt;sensorValue&gt; milliseconds:</span>
+                        delay(sensorValue);
+                      }
+                      
+                      
+                      
+                      <span class="hljs-comment">//</span>
+                      
+                      <span class="hljs-keyword">int</span> sensorPin = A0;    <span class="hljs-comment">// select the input pin for the potentiometer</span>
+                      <span class="hljs-keyword">int</span> ledPin = <span class="hljs-number">13</span>;      <span class="hljs-comment">// select the pin for the LED</span>
+                      <span class="hljs-keyword">int</span> sensorValue = <span class="hljs-number">0</span>;  <span class="hljs-comment">// variable to store the value coming from the sensor</span>
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// declare the ledPin as an OUTPUT:</span>
+                        pinMode(ledPin, OUTPUT);
+                        Serial.begin(<span class="hljs-number">9600</span>);
+                      }
+                      
+                      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+                        <span class="hljs-comment">// read the value from the sensor:</span>
+                        sensorValue = analogRead(sensorPin);
+                        <span class="hljs-comment">// turn the ledPin on</span>
+                        digitalWrite(ledPin, HIGH);
+                        <span class="hljs-comment">// stop the program for &lt;sensorValue&gt; milliseconds:</span>
+                        delay(sensorValue);
+                        <span class="hljs-comment">// turn the ledPin off:</span>
+                        digitalWrite(ledPin, LOW);
+                        <span class="hljs-comment">// stop the program for for &lt;sensorValue&gt; milliseconds:</span>
+                        delay(sensorValue);
+                        Serial.println(sensorValue);
+                        delay(<span class="hljs-number">1</span>);
+                      }
+                      
+                      </div></code></pre>
+                      <p>1602 超声波 9g舵机</p>
+                      <p>遥控器</p>
+                      
+                <!-- 结束 -->
+            </div>
+            <p></p>
+        </div>
+        <div class="right">
+            <p></p>
+        </div>
+        <!-- <div style="clear: both;">11111111111</div> -->
+    </div>
